@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.attribution {
+  font-size: 11px; text-align: center; 
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
+.conteiner {
+  background-color: hsl(221, 100%, 96%);
+  display: grid;
+  place-items: center;
+  place-content: space-around;
+  width: 100%;
+  height: 100vh;
+}
+
+.summary {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+
+.display-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(
+    to top,
+    hsl(252, 100%, 67%) 0%,
+    hsl(252, 100%, 67%) 100%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+
+.display-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: space-evenly;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 20px 20px 0;
+  padding: 20px;
+}
+
+.porcentage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.r {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number {
+  display:flex;
+}
+
+.Reaction {
+  color: hsl(0, 100%, 67%);
+  font-size: 14px;
+  font-weight: bold;
+}
+#bg1 {
+  background-color: hsl(0, 100%, 67%, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  width:100%;
+  height: 40px;
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#bg2 {
+  background-color: hsl(39, 100%, 56%, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  width:100%;
+  height: 40px;
+}
+.verbal {
+  color: hsl(166, 100%, 37%);
+  font-size: 14px;
+  font-weight: bold;
+}
+#bg3 {
+  background-color: hsl(166, 100%, 37%, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  width:100%;
+  height: 40px;
+}
+.visual {
+  color: hsl(234, 85%, 45%);
+  font-size: 14px;
+  font-weight: bold;
+}
+#bg4 {
+  background-color: hsl(234, 85%, 45%, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  width:100%;
+  height: 40px;
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(252, 100%, 67%);
+}
+
+.number-front {
+  color: hsl(224, 30%, 27%);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.number-two {
+  color: hsl(224, 30%, 27%, 0.5);
+  font-weight: bold;
+}
+
+.circule {
+   background: linear-gradient(
+    to bottom,
+    hsl(241, 81%, 54%) 0%,
+    hsl(252, 100%, 67%) 100%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+}
+
+.number-circule {
+  font-size: 50px;
+  margin-top: 40px;
+}
+
+.of100 {
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 50px;
+}
+
+.text {
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+      overflow-x: hidden;
+    }
+    
+    .summary {
+      display: grid;
+      place-items: center;
+      height: 500px;
+    }
+    .display-left {
+      display: grid;
+      place-items: center;
+      width: 375px;
+      border-radius: 0 0 20px 20px;
+      gap: 20px;
+    }
+    
+    .display-right {
+      width: 375px;
+      gap: 15px;
+    }
+    
+    .Reaction {
+      margin-right: 120px;
+    }
+    
+    .memory {
+      margin-right: 120px;
+    }
+    
+    .verbal {
+      margin-right: 120px;
+    }
+    
+    .visual {
+      margin-right: 120px;
+    }
+    
+    .attribution {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 500px) {
+    body {
+      overflow-x:hidden;
+    }
+    
+    .summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 450px;
+    }
+    
+    .Reaction {
+      margin-right: -25px;
+    }
+    
+    .memory {
+      margin-right: -25px;
+    }
+    
+    .verbal {
+      margin-right: -25px;
+    }
+    
+    .visual {
+      margin-right: -25px;
+    }
+  }
